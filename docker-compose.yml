@@ -1,0 +1,16 @@
+version: '3'
+services:
+  glibc:
+    image: indiewebconsult/glibc:alpine
+    build:
+      context: glibc
+
+  java:
+    image: indiewebconsult/java:8-x64-alpine
+    build:
+      context: java
+
+  androidsdk:
+    image: indiewebconsult/androidsdk:alpine-java8
+    build:
+      context: sdk
