@@ -3,14 +3,14 @@ services:
   glibc:
     image: indiewebconsult/glibc:alpine
     build:
-      context: glibc
+      context: docker-alpine-glibc
 
   java:
     image: indiewebconsult/java:8-x64-alpine
     build:
-      context: java
+      context: docker-alpine-x64-java
 
   androidsdk:
     image: indiewebconsult/androidsdk:alpine-java8
     build:
-      context: sdk
+      context: docker-alpine-androidsdk
